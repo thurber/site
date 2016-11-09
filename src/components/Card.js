@@ -1,10 +1,12 @@
 import React from 'react'
 import Panel from 'muicss/lib/react/panel'
 import T from 'babel!react-svg!../styles/tcard.svg'
+import Matrix from './Matrix'
 
 export default props => (
   <Panel
     style={{
+        position: 'relative',
         maxWidth: '300px',
         marginLeft: 'auto',
         marginRight: 'auto',
@@ -41,5 +43,19 @@ export default props => (
         }}
       />
     </div>
+    <Matrix
+      style={{
+        position: 'absolute',
+        top: '16px',
+        left: '16px',
+        right: '16px',
+        bottom: '16px',
+        borderRadius: '5px',
+      }}
+      backgroundColor='linen'
+      backgroundOpacity='0.05'
+      textColor='linen'
+      delay={12000}
+    />
   </Panel>
 )
