@@ -1,3 +1,8 @@
+body {
+  background-color: white;
+  animation: fadeBgToBlack 10s ease-in-out 16s forwards;
+}
+
 path {
   stroke-dasharray: 750;
   stroke-dashoffset: 750;
@@ -11,6 +16,18 @@ path {
     &:nth-child(#{$i}) {
       animation-delay: (1s + 0.001s * $i), (2s + 0.002s * $i);
     }
+  }
+}
+
+@keyframes fadeBgToBlack {
+  to {
+    background-color: black;
+  }
+}
+
+@keyframes fadeTextShadow {
+  to {
+    text-shadow: 0 1px 2px transparent;
   }
 }
 

@@ -6,12 +6,11 @@ import Matrix from './Matrix'
 export default props => (
   <Panel
     style={{
-        position: 'relative',
-        maxWidth: '300px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        borderRadius: '5px',
-        backgroundColor: 'linen',
+      maxWidth: '300px',
+      margin: '10px auto',
+      borderRadius: '0',
+      backgroundColor: 'linen',
+      animation: 'fadeBgToBlack 10s ease-in-out 16s forwards',
     }}
   >
     <div
@@ -42,20 +41,59 @@ export default props => (
           padding: '10px',
         }}
       />
+      <Matrix
+        style={{
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          right: '0',
+          bottom: '0',
+          borderRadius: '5px',
+        }}
+        textColor='darkseagreen'
+        backgroundDelay={2500}
+        delay={12000}
+        duration={15000}
+      />
     </div>
-    <Matrix
+    <div
       style={{
-        position: 'absolute',
-        top: '16px',
-        left: '16px',
-        right: '16px',
-        bottom: '16px',
-        borderRadius: '5px',
+        textAlign: 'center',
+        fontFamily: 'serif',
+        fontWeight: 'bold',
+        fontVariant: 'small-caps',
+        color: 'transparent',
+        backgroundColor: 'darkred',
+        textShadow: '0 1px 2px rgba(255,255,255,0.5)',
+        MozBackgroundClip: 'text',
+        WebkitBackgroundClip: 'text',
+        backgroundClip: 'text',
+        padding: '10px',
+        animation: 'fadeBgToBlack 10s ease-in-out 16s forwards, fadeTextShadow 10s ease-out 20s forwards',
       }}
-      backgroundColor='antiquewhite'
-      backgroundOpacity='0.01'
-      textColor='linen'
-      delay={12000}
-    />
+    >
+      <div
+        className='mui--text-display1'
+        style={{
+          lineHeight: '1',
+        }}
+      >
+        Wanted
+      </div>
+      <div
+        className='mui--text-body1'
+        style={{
+        }}
+      >
+        dead or alive
+      </div>
+      <div
+        className='mui--text-title'
+        style={{
+        }}
+      >
+        Reward: ¥ 1 000 000 000
+      </div>
+    </div>
   </Panel>
 )
