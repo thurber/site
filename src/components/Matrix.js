@@ -16,7 +16,7 @@ export default class Matrix extends React.Component {
       ctx.fillStyle = this.props.textColor || '#0F0'
       columns = columns.map((value, index) => {
         let character = String.fromCharCode(12448 + Math.random() * 96)
-        this.canvas.getContext('2d').fillText(character, index * 10, value)
+        this.canvas.getContext('2d').fillText(character, index * 10 + Math.random() * 6 - 3, value)
         return value > 758 + Math.random() * 1e4 ? 0 : value + 10
       })
       window.setTimeout(frame, this.props.interval || 33)

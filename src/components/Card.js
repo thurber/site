@@ -52,8 +52,8 @@ export default props => (
         bottom: '16px',
         borderRadius: '5px',
       }}
-      backgroundColor='linen'
-      backgroundOpacity='0.05'
+      backgroundColor='antiquewhite'
+      backgroundOpacity='0.01'
       textColor='linen'
       delay={12000}
     />
