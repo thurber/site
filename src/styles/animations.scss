@@ -16,6 +16,66 @@ g.t path {
   }
 }
 
+g.t {
+  animation: flicker 0.5s ease-in-out 13s forwards 50;
+}
+g.ali {
+  opacity: 0;
+  animation: flash 0.5s ease-in-out 14s forwards 50;
+}
+g.oes {
+  opacity: 0;
+  animation: flash 0.5s ease-in-out 14.1s forwards 50;
+}
+g.ant {
+  opacity: 0;
+  animation: flash 0.5s ease-in-out 14.2s forwards 50;
+}
+g.tdog {
+  opacity: 0;
+  animation: flash 0.5s ease-in-out 14.3s forwards 50;
+}
+g.ice {
+  opacity: 0;
+  animation: flash 0.5s ease-in-out 14.4s forwards 50;
+}
+
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 0.75;
+  }
+  15% {
+    opacity: 0.75;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @keyframes fadeBgToBlack {
   to {
     background-color: black;
