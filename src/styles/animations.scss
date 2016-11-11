@@ -17,7 +17,7 @@ g.t path {
 }
 
 g.t {
-  animation: flicker 0.5s ease-in-out 13s forwards 50;
+  animation: flicker 0.5s ease-in-out 12s forwards 50;
 }
 g.ali {
   opacity: 0;
@@ -38,6 +38,10 @@ g.tdog {
 g.ice {
   opacity: 0;
   animation: flash 0.5s ease-in-out 14.4s forwards 50;
+}
+g.lla {
+  opacity: 0;
+  animation: flicker 0.5s ease-in-out 30s forwards 2;
 }
 
 @keyframes flicker {
