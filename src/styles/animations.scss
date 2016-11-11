@@ -3,15 +3,12 @@ body {
   animation: fadeBgToBlack 10s ease-in-out 16s forwards;
 }
 
-path {
+g.t path {
   stroke-dasharray: 750;
   stroke-dashoffset: 750;
   fill-opacity: 0;
   stroke-opacity: 0;
   animation: draw 10s ease-out 2s forwards, appear 10s ease-in 4s forwards;
-}
-
-path {
   @for $i from 1 through 1000 {
     &:nth-child(#{$i}) {
       animation-delay: (1s + 0.001s * $i), (2s + 0.002s * $i);
