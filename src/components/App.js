@@ -3,7 +3,7 @@ import React from 'react'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import reducers from '../reducers/index'
-import Card from './Card'
+import Background from '../containers/Background'
 import '../styles/index.scss'
 
 export default  props => (
@@ -18,6 +18,6 @@ export default  props => (
       window.devToolsExtension
     ) ? window.devToolsExtension() : undefined
   )}>
-    <Card/>
+    <Background/>
   </Provider>
 )

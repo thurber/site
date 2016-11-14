@@ -1,7 +1,7 @@
 import React from 'react'
 import Panel from 'muicss/lib/react/panel'
 import T from 'babel!react-svg!../styles/tcard.svg'
-import Matrix from './Matrix'
+import Matrix from '../containers/Matrix'
 
 export default props => (
   <Panel
@@ -82,15 +82,11 @@ export default props => (
       </div>
       <div
         className='mui--text-body1'
-        style={{
-        }}
       >
         dead or alive
       </div>
       <div
         className='mui--text-title'
-        style={{
-        }}
       >
         Reward: ¥ 1 000 000 000
       </div>

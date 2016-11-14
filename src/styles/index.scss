@@ -10,4 +10,9 @@ $mui-accent-color-light:  mui-color('green', 'A400');
 
 @import '~muicss/lib/sass/mui';
 
+html, body, #mount {
+  width: 100%;
+  height: 100%;
+}
+
 @import './animations';
