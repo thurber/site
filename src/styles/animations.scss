@@ -166,3 +166,21 @@ g.lla {
     border-left: 1em solid rgba(200,200,200,0.5);
   }
 }
+
+@keyframes bolt {
+  from {
+    bottom: 1000px;
+  }
+  to {
+    bottom: 0px;
+  }
+}
+
+@keyframes gear {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
